@@ -11,19 +11,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We provide music lessons for piano, guitar, electric 
+    guitar, bass guitar, ukelele, and the violin. Your first two lessons 
+    are free.">
     <link rel="stylesheet" href="/styles.css">
-    <title>Lessons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/script.js"></script>
+    <title>Piano, Guitar, Violin Lessons | Strike a Chord</title>
 </head>
 
 <body>
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="instructors.html">Instructors</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
     <header>
         <h1><span class="tab-desk">&#9836;</span> Strike a Chord <span class="tab-desk">&#9836;</span></h1>
     </header>
-    <nav>
+    <nav class="tab-desk">
         <ul>
-            <li><a href="/nav/index.html">Home</a> </li>
-            <li><a href="/nav/lessons.html ">Lessons</a> </li>
-            <li><a href="/nav/instructions.html ">Instructors</a> </li>
+            <li><a href="/nav/index.html">Home</a></li>
+            <li><a href="/nav/lessons.html ">Lessons</a></li>
+            <li><a href="/nav/instructors.html">Instructors</a> </li>
             <li><a href="/nav/rentals.html ">Rentals</a> </li>
             <li><a href="/nav/contact.html ">Contact</a></li>
         </ul>
@@ -50,6 +68,8 @@
 sitting at a piano">
             <p>We offer piano lessons for all ages, beginning at age three. Whether you are a beginner or have been playing the piano for a while, we have a program to suit your needs. Learn new techniques, theory, harmony, and tone. Learning how to play
                 the piano helps develop hand-eye coordination and self-confidence.</p>
+            <h4>Piano Spring Performance</h4>
+            <audio controls src="/audio/piano.wav"></audio>
         </div>
 
         <!--guitar-->
@@ -59,6 +79,8 @@ sitting at a piano">
 guitar">
             <p>We teach acoustic guitar, electric guitar, bass guitar, and ukulele. We have guitar lessons for beginners, intermediate players, and advanced players. Improve your skills with weekly lessons. Learn new tips and techniques from experienced
                 instructors. We also have a rock band program that you can join!</p>
+            <h4>Guitar Winter Performance</h4>
+            <audio controls src="/audio/guitar.wav"></audio>
         </div>
 
         <!--Violin-->
@@ -67,12 +89,20 @@ guitar">
             <img class="round" src="/img/violin.jpg" alt="woman playing the violin">
             <p>We offer violin lessons for all ages, beginning at age six. Our violin lessons include a variety of music styles, from fiddle to classical. Our instructors will help you fine-tune techniques and accomplish your musical goals. We work with
                 you to create a customized program, tailored to your needs.</p>
+            <h4>Violin Spring Performance</h4>
+            <audio controls src="/audio/violin.wav"></audio>
         </div>
     </main>
 
     <footer>
-        <p>&copy; Copyright 2022. All Rights Reserved.</p>
-        <p>lessons@strikeachord.net</p>
+        <div class="copyright">
+            <p>&copy; Copyright 2022. All Rights Reserved.</p>
+            <p>lessons@strikeachord.net</p>
+        </div>
+        <div class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </div>
     </footer>
 </body>
 
